@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.js"
+  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<script type="text/javascript">
+		$.get('https://open.sap.com/api/v2/courses?include=channel%2Cuser_enrollment', function(data) {
+			// console.log(data.data);
+  			var tbody = $("<tbody />");
+  			// var	tr;
+  			$.each(data.data, function( index, value ) {	  			
+        		tbody.append($("<tr />").append(
+        			"<td><a href='https://open.sap.com/courses/" + value.attributes.slug +"'>" + value.attributes.title + "</a></td>"
+        			+ "<td>" + value.attributes.status + "</td>"
+        			+ "<td>" + value.attributes.accessible + "</td>"
+        			));
+      		});      				
+        	$('body').append(tbody);
+		console.log("done");
+		});
+	</script>
+</body>
+</html>
