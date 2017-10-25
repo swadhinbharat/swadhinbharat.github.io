@@ -1,29 +1,104 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	<script
-  src="https://code.jquery.com/jquery-3.2.1.js"
-  integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-  crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <script  src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <style>
+    #inSearch {
+      width: 100%;
+    }
+    table, th, td {
+       border: 1px solid black;
+    }
+    table {
+        width: 100%;
+    }
+
+    th {
+        height: 50px;
+    }
+    body {
+      font-family: 'Roboto', 'Tangerine', 'Raleway', sans-serif;
+      background-color: #E9E6E9;
+      font-size: small;
+    }
+body {
+  padding: 5px;
+}
+  </style>
 </head>
-<body>
-	<script type="text/javascript">
-		$.get('https://open.sap.com/api/v2/courses?include=channel%2Cuser_enrollment', function(data) {
-			// console.log(data.data);
-  			var tbody = $("<tbody />");
-  			// var	tr;
-  			$.each(data.data, function( index, value ) {	  			
-        		tbody.append($("<tr />").append(
-        			"<td><a href='https://open.sap.com/courses/" + value.attributes.slug +"'>" + value.attributes.title + "</a></td>"
-        			+ "<td>" + value.attributes.status + "</td>"
-        			+ "<td>" + value.attributes.accessible + "</td>"
-        			));
-      		});      				
-        	$('body').append(tbody);
-		console.log("done");
-		});
-	</script>
+<body>  
+  <!-- <p id='loading'>Loading ...</p> -->
+<input type="text" id="inSearch" onkeyup="populateBody()" placeholder="Search for anything .." title="Search">
+  <table id="my-ajax-table"></table>
+  <script type="text/javascript">
+    var arr = [];
+    var arrFilterd = [];
+
+    function populateBody( ) {
+      var search = $("#inSearch")[0].value.trim();
+      $("tbody").remove();
+
+        if (search == "" ) {
+          arrFilterd = arr;
+        }
+        else {
+          arrFilterd = jQuery.grep(arr, function( value ) {
+            return ( value.attributes.classifiers.topic === undefined ? false : value.attributes.classifiers.topic.join().toLowerCase().search(search.toLowerCase()) > 0 );
+          });          
+        }
+
+        $.each(arrFilterd, function( index, value ) {          
+          if (value.attributes.language == 'en') {
+            $("#my-ajax-table").append("<tbody />").append($("<tr />").append(
+                "<td>" + index + "</td>"
+              + "<td>" + "<a href='https://open.sap.com/courses/" + value.attributes.slug +"'>" + value.attributes.title + "</a>" + "</td>"
+              + "<td>" + value.attributes.status + "</td>"
+              + "<td>" + value.attributes.accessible + "</td>"
+              + "<td>" + moment(new Date(value.attributes.start_at), "YYYYMMDD").fromNow() + "</td>"
+              + "<td>" + (value.attributes.classifiers.category||'') + "</td>"
+              + "<td>" + (value.attributes.classifiers.topic||'') + "</td>"
+              ));
+        }
+          });       
+    }
+
+    function populateTable( ) {
+
+      $("#my-ajax-table").append("<thead />").append($("<tr />").append(
+                "<th>" + "Index" + "</a></th>"
+              + "<th>" + "Title" + "</a></th>"
+              + "<th>" + "Status" + "</th>"
+              + "<th>" + "Accessible" + "</th>"
+              + "<th>" + "Start Date" + "</th>"
+              + "<th>" + "Category" + "</th>"
+              + "<th>" + "Topic" + "</th>"
+              ));
+ 
+        populateBody( );      
+    }
+
+    $.get('https://open.sap.com/api/v2/courses?include=channel%2Cuser_enrollment', function(data) {
+      arrFilterd = arr = data.data; 
+
+      populateTable( );
+      // $('#loading').hide();
+      });
+
+
+    $( document ).ready(function() {
+        console.log( "document loaded" );
+        $( "#inSearch" ).focus();
+    });
+ 
+    $( window ).on( "load", function() {
+        console.log( "window loaded" );
+    });
+  </script>
 </body>
 </html>
