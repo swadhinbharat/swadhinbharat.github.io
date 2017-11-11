@@ -5,23 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.2/angular.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script> -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="//code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.19.1/moment.js"></script>
-    <!-- <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/popper.min.js"></script> -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"></script>
-    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> -->
     <!-- <link rel="stylesheet" href="//necolas.github.io/normalize.css/7.0.0/normalize.css"> -->
     <link rel="stylesheet" href="css/style.css">
     <script src="main.js"></script>
 </head>
 
-<body ng-app="myapp">
+<body ng-app="myapp" class="pre-scrollable">
     <div ng-controller="NorthwindController">
         <div class="container">
             <h3><strong>Invoices</strong></h3>
+            <input type="text" class="form-control" ng-model="filterValue" placeholder="Filter" type="text" width="100%"><br>
             <table class="table table-hover table-bordered">
                 <thead>
                     <tr>
@@ -34,12 +36,17 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr ng-repeat="course in courses" class="{{course.class}}">
-                        <td><a href="{{course.url}}" target="_blank">{{course.title}}</a></td>
+                    <tr ng-repeat="course in courses | orderBy:sortType:sortReverse | filter:filterValue" class="{{course.attributes.status | statusFormatter}}">
+                        <td><a href="https://open.sap.com/courses/{{course.attributes.slug}}/progress" target="_blank">{{course.attributes.title}}</a></td>
+                        <td>{{course.attributes.status}}</td>
+                        <td>{{course.attributes.accessible}}</td>
+                        <!-- moment(new Date({{course.attributes.start_at}}), 'YYYYMMDD').fromNow() -->
+                        <td>{{course.attributes.start_at | date | dateFormatter}}</td>
+<!--                         <td><a href="{{course.url}}" target="_blank">{{course.title}}</a></td>
                         <td>{{course.status}}</td>
                         <td>{{course.accessible}}</td>
                         <td>{{course.startdate}}</td>
-                        <!-- <td>{{course.category}}</td> -->
+ -->                        <!-- <td>{{course.category}}</td> -->
                         <!-- <td>{{course.topic}}</td> -->
                     </tr>
                 </tbody>
