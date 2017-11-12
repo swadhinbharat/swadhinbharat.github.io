@@ -1,28 +1,24 @@
-.mt-0 {
-  margin-top: 0 !important;
+.small-text {
+	font-size: xx-small;
 }
 
-.ml-1 {
-  margin-left: ($spacer-x * .25) !important;
+
+/*--------------------------*/
+*{
+  margin: 0;
+  padding: 0;
 }
 
-.px-2 {
-  padding-left: ($spacer-x * .5) !important;
-  padding-right: ($spacer-x * .5) !important;
-}
-
-.p-3 {
-  padding: $spacer-y $spacer-x !important;
+div.card {
+    /*display: inline-flex;*/
+    display: inline-grid;
+    white-space: nowrap;
 }
 
 .container {
-	margin-left: : 0px;
+	margin-top: 10px;
 }
 
-.item-br-color-type-red {
-	background-color: red;
-}
-
-.red {
-	background-color: RED;
+.tr {
+	border-radius: 15%;
 }

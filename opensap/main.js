@@ -1,12 +1,15 @@
 angular.module("myapp", []).controller('NorthwindController', ['$scope', '$http',
     function($scope, $http) {
+        $scope.filterValue = 's4hana';
         // var northwindURL='/destinations/northwind/V4/Northwind/Northwind.svc/Invoices?$top=15';  
         var northwindURL = 'https://open.sap.com/api/v2/courses?include=channel%2Cuser_enrollment';
         $http({
             method: 'GET',
             url: northwindURL
         }).then(function successCallback(response) {
-            var results = response.data.data;
+            var results = response.data.data.filter(function(course){
+                return course.attributes.language === 'en';
+            });
             var courses = [];
 
             _.each(results, function(result) {
@@ -36,7 +39,7 @@ angular.module("myapp", []).controller('NorthwindController', ['$scope', '$http'
             });
             $scope.courses = courses;
         }, function errorCallback(response) {
-            alert("Error while fetching courses" + response);
+            console.log("Error while fetching courses" + response);
         });
     }
 ]).filter('dateFormatter', function() { 
