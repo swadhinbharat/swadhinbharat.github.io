@@ -47,10 +47,10 @@
                             <br>
                             <small class="small">
                                 <span ng-repeat="topic in course.attributes.classifiers.topic">{{topic}}{{($index < course.attributes.classifiers.topic.length - 1) ? ' | ' : ''}}</span>
-                            </small>    
+                            </small>
                             <!-- <img src="{{course.attributes.image_url}}" alt="Avatar" style="width:20%"/>  -->
                         </td>
-                        <picture src="{{course.attributes.image_url}}"/>
+                        <picture src="{{course.attributes.image_url}}" />
                         <!-- <td>{{course.attributes.status}}</td> -->
                         <!-- <td>{{course.attributes.accessible}}</td> -->
                         <!-- <td>{{course.attributes.start_at | date | dateFormatter}}</td> -->

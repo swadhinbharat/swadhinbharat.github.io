@@ -1,24 +1,15 @@
-.small-text {
-	font-size: xx-small;
-}
-
-
-/*--------------------------*/
 *{
   margin: 0;
   padding: 0;
 }
 
-div.card {
-    /*display: inline-flex;*/
-    display: inline-grid;
-    white-space: nowrap;
-}
-
 .container {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
-.tr {
-	border-radius: 15%;
+html { overflow-y: scroll; }
+
+.small {
+	color: GREY;
 }
+
