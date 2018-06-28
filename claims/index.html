@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Claim</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://sapui5.hana.ondemand.com/resources/sap-ui-core.js"></script>
+    <style>
+    form {
+        padding: 10px;
+        width: 60%;
+        vertical-align: middle;
+    }
+    </style>
+    <script>
+    function callSubmit() {
+        // debugger;
+        // var csrf_token = $('meta[name="csrf-token"]').attr('content');
+        // $.ajaxPrefilter(function(options, originalOptions, jqXHR) {
+        //     if (options.type.toLowerCase() === "post") {
+        //         // initialize `data` to empty string if it does not exist
+        //         options.data = options.data || "";
+
+        //         // add leading ampersand if `data` is non-empty
+        //         options.data += options.data ? "&" : "";
+
+        //         // add _token entry
+        //         options.data += "_token=" + encodeURIComponent(csrf_token);
+        //     }
+        // });
+
+
+        // var userID = $("#userID").val();
+        // $.post('/admin/users/delete-user', {id:userID}, function() {
+        // // User deleted
+        // });
+
+        // hr.setRequestHeader ("Authorization", "Basic " + btoa(username + ":" + password));
+        const USERNAME = "KUMARA";
+        const PASSWORD = "msg12345";
+
+        var model = new sap.ui.model.odata.v2.ODataModel("http://mgss22a.aws.msg.de:8000/sap/opu/odata/sap/ZSWTEST_CLAIMS_SRV/", true, USERNAME, PASSWORD);
+
+
+        var vData = {
+            Amount: $("#idAmount").val(),
+            Waers: $("#idSelectCurrency").val()
+        };
+
+
+        // model.read("/ClaimSet", {
+        //     success: function(oData, oResponse) {
+        //         debugger;
+        //         console.log(oData);
+        //     }
+        // });
+
+        model.create("/ClaimSet", vData, {
+            success: function(oData, oResponse) {
+                console.log(oData);
+            },
+            error: function(oResponse) {
+                console.log("Claim could not be created");
+            }
+        });
+
+        // var oHeaders = {
+        //     'X-Requested-With': 'X',
+        //     'Accept': 'application/json',
+        // };
+
+        // $.ajax({
+        //     type: "POST",
+        //     url: "http://KUMARA:msg12345@mgss22a.aws.msg.de:8000/sap/opu/odata/sap/ZSWTEST_CLAIMS_SRV/ClaimSet",
+        //     headers: {
+        //         "Authorization": "Basic " + btoa(USERNAME + ":" + PASSWORD)
+        //     },
+        //     data: { Amount: "120", Waers: "USD" },
+        //     success: function(data, status) {
+        //         console.log(data);
+        //     },
+        //     error: function(status) {
+        //         console.log(status);
+        //     },
+        //     dataType: "json"
+        // });
+
+    }
+
+    $("#contactForm").submit(function(event) {
+        // cancels the form submission
+        event.preventDefault();
+        callSubmit();
+    });
+    </script>
+</head>
+
+<body>
+    <form id="contactForm" method="post">
+        <div class="form-group row">
+            <label for="idAmount" class="col-4 col-form-label">Amount</label>
+            <div class="col-8">
+                <input id="idAmount" name="idAmount" placeholder="0.00" type="number" class="form-control here" required="required" value="123">
+            </div>
+        </div>
+        <div class="form-group row">
+            <label for="idSelectCurrency" class="col-4 col-form-label">Currency</label>
+            <div class="col-8">
+                <select id="idSelectCurrency" name="idSelectCurrency" class="custom-select" required="required">
+                    <option value="USD">US Dollar</option>
+                    <option value="SGD">Singapore Dollar</option>
+                    <option value="INR">Indian Rupees</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group row">
+            <div class="offset-4 col-8">
+                <button name="submit" type="button" class="btn btn-primary" onclick="callSubmit()">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>
