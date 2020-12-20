@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investments</title>
+</head>
+
+<body>
+    <form id="TheForm" method="post" action="https://pruaccess.prudential.com.sg/prulinkfund/viewFundPerformance.do"
+        target="_blank">
+        <input type="hidden" name="viewType" value="LIN" />
+        <input type="hidden" name="fundPriceType" value="BID" />
+        <input type="hidden" name="startDate" value="12-Dec-2020" />
+        <input type="hidden" name="endDate" value="18-Dec-2020" />
+        <input type="hidden" name="_selectedFunds" value="1" />
+        <input type="hidden" name="selectedFunds" value="204896" />
+        <input type="hidden" name="selectedFunds" value="204903" />
+        <input type="hidden" name="selectedFunds" value="215531" />
+    </form>
+
+
+    <script>
+        document.ond = function(){
+            document.getElementById('TheForm').submit();
+        }
+
+    </script>
+
+    <button onclick="document.getElementById('TheForm').submit()">Test</button>
+</body>
+
+</html>
