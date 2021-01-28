@@ -74,7 +74,7 @@ window.onload = function () {
             buildRow( 'DLM', "https://dlm/systemcockpit/portal/#/search/%s".replace("%s", search.value), 0);
         } else if (!!/^\d{10}$/.test(search.value)) {
             buildRow( 'BCS', "https://support.wdf.sap.corp/sap/support/message/%s".replace("%s", search.value), 0);
-        } else if (!!/^\d{7}$/.test(search.value)) {
+        } else if (!!/^\d{1,10}$/.test(search.value)) {
             buildRow( 'Notes', "https://i7p.wdf.sap.corp/sap/support/notes/%s".replace("%s", search.value), 0);
         } else { }
 
