@@ -70,13 +70,15 @@ window.onload = function () {
         // resultSet = fuse.search(pattern);
         placeholder.innerHTML = ""
 
-        if (!!search.value.match(/^([a-zA-Z0-9_-]){3}$/)) {
+        if (search.value.length ==3 && !!search.value.match(/^[a-zA-Z]*([a-zA-Z0-9_-]){2}$/)) {
             buildRow( 'DLM', "https://dlm/systemcockpit/portal/#/search/%s".replace("%s", search.value), 0);
-        } else if (!!/^\d{10}$/.test(search.value)) {
+        }
+        if (!!/^\d{10}$/.test(search.value)) {
             buildRow( 'BCS', "https://support.wdf.sap.corp/sap/support/message/%s".replace("%s", search.value), 0);
-        } else if (!!/^\d{1,10}$/.test(search.value)) {
-            buildRow( 'Notes', "https://i7p.wdf.sap.corp/sap/support/notes/%s".replace("%s", search.value), 0);
-        } else { }
+        }
+        if (!!/^\d{1,10}$/.test(search.value)) {
+            buildRow( 'Notes', "https://i7p.wdf.sap.corp/sap/support/notes/%s".replace("%s", Number(search.value)), 0);
+        }
 
 
 
@@ -93,7 +95,8 @@ window.onload = function () {
             link.attr("title", title);
             link.attr("target", "_blank");
             link.text(title + " - " + url);
-            link.addClass("collection-item").addClass(index == 0 ? "active" : "");
+            
+            link.addClass("collection-item").addClass(resultList.children().length < 1 ? "active" : "");
 
             $(resultList).append(link);
         }
