@@ -40,7 +40,7 @@
     <div class="container">
         <div class="center">
             <form id="TheForm" method="post"
-                action="https://pruaccess.prudential.com.sg/prulinkfund/viewFundPerformance.do" target="_blank">
+                action="https://pruaccess.prudential.com.sg/prulinkfund/viewFundPerformance.do" target="_self">
                 <input type="hidden" name="viewType" value="LIN" />
                 <input type="hidden" name="fundPriceType" value="BID" />
                 <input type="hidden" name="startDate" value="12-Dec-2020" />
@@ -66,6 +66,8 @@
 
             // Set the date
             field.value = moment().format("DD-MMM-YYYY");
+
+            document.getElementById('TheForm').submit();
         });
 
     </script>
