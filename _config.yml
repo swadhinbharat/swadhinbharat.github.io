@@ -38,33 +38,22 @@ theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
 
-<<<<<<< HEAD
-# theme: jekyll-theme-time-machine
-# # minimal_mistakes_skin: "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
-=======
-theme: jekyll-theme-midnight
-minimal_mistakes_skin: "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
->>>>>>> bef52f8856eb753e4897c06d4cfb649e62f3491a
-
-# # remote_theme : "manid2/lone-wolf-theme"
-# # remote_theme: "mmistakes/minimal-mistakes@4.23.0"
-
-# # Exclude from processing.
-# # The following items will not be processed, by default.
-# # Any item listed under the `exclude:` key here will be automatically added to
-# # the internal "default list".
-# #
-# # Excluded items can be processed by explicitly listing the directories or
-# # their entries' file path in the `include:` list.
-# #
-# # exclude:
-# #   - .sass-cache/
-# #   - .jekyll-cache/
-# #   - gemfiles/
-# #   - Gemfile
-# #   - Gemfile.lock
-# #   - node_modules/
-# #   - vendor/bundle/
-# #   - vendor/cache/
-# #   - vendor/gems/
-# #   - vendor/ruby/
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
