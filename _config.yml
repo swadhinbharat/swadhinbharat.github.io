@@ -38,8 +38,13 @@ theme: jekyll-theme-midnight
 plugins:
   - jekyll-feed
 
+<<<<<<< HEAD
 # theme: jekyll-theme-time-machine
 # # minimal_mistakes_skin: "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+=======
+theme: jekyll-theme-midnight
+minimal_mistakes_skin: "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+>>>>>>> bef52f8856eb753e4897c06d4cfb649e62f3491a
 
 # # remote_theme : "manid2/lone-wolf-theme"
 # # remote_theme: "mmistakes/minimal-mistakes@4.23.0"
