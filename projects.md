@@ -2,7 +2,7 @@
 layout: default
 ---
 
-- [funds](./funds)
-- [opener](./opener)
-- [opensap](./opensap)
-- [sign](./sign)
+- [funds](/projects/funds)
+- [opener](/projects/opener)
+- [opensap](/projects/opensap)
+- [sign](/projects/sign)
