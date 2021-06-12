@@ -1,9 +1,5 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
-# title: Home
+layout: default
 ---
 
 Here are some basic details 
@@ -11,9 +7,9 @@ Here are some basic details
 - [Résumé](assets/docs/Swadhin%20Patel.pdf)
 - [LinkedIn](https://in.linkedin.com/in/swadhinpatel)
 
-Some projects
+<!-- Some projects
 
 - [funds](projects/funds)
 - [opener](projects/opener)
 - [opensap](projects/opensap)
-- [sign](projects/sign)
+- [sign](projects/sign) -->

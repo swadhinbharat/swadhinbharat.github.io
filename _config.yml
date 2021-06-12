@@ -29,33 +29,37 @@ twitter_username: swadhinbharat
 github_username:  swadhinbharat
 linkedin_username: swadhinpatel
 
-# Build settings
-# theme: minima
+show_downloads: true
+google_analytics: UA-577898-12
+theme: jekyll-theme-midnight
+
+# # Build settings
+# # theme: minima
 plugins:
   - jekyll-feed
 
-theme: minimal-mistakes-jekyll
-minimal_mistakes_skin: "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+# theme: jekyll-theme-time-machine
+# # minimal_mistakes_skin: "dark" # "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 
-# remote_theme : "manid2/lone-wolf-theme"
-# remote_theme: "mmistakes/minimal-mistakes@4.23.0"
+# # remote_theme : "manid2/lone-wolf-theme"
+# # remote_theme: "mmistakes/minimal-mistakes@4.23.0"
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# # Exclude from processing.
+# # The following items will not be processed, by default.
+# # Any item listed under the `exclude:` key here will be automatically added to
+# # the internal "default list".
+# #
+# # Excluded items can be processed by explicitly listing the directories or
+# # their entries' file path in the `include:` list.
+# #
+# # exclude:
+# #   - .sass-cache/
+# #   - .jekyll-cache/
+# #   - gemfiles/
+# #   - Gemfile
+# #   - Gemfile.lock
+# #   - node_modules/
+# #   - vendor/bundle/
+# #   - vendor/cache/
+# #   - vendor/gems/
+# #   - vendor/ruby/
