@@ -1,6 +1,7 @@
 ---
-layout: posts
+layout: default
 ---
-<p>{{ page.date }} - Written by {{ page.author }}</p>
+<p>{{ page.date | date_to_string }} - by {{ page.author }}</p>
+<hr>
 
 {{ content }}
