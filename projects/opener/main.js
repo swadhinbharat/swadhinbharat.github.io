@@ -73,6 +73,9 @@ window.onload = function () {
         if (pattern.length == 3 && !!pattern.match(/^[a-zA-Z]*([a-zA-Z0-9_-]){2}$/)) {
             buildRow('DLM', "https://dlm/systemcockpit/portal/#/search/%s".replace("%s", pattern), 0);
         }
+        if (pattern.length == 10 && !!pattern.match(/^[a-zA-Z]{4}[0-9]{6}/)) {
+            buildRow('SLC', "https://slc.wdf.sap.corp/tracer/?transport=%s&go=1".replace("%s", pattern), 0);
+        }
         if (!!/^\d{10}$/.test(pattern)) {
             buildRow('BCS', "https://support.wdf.sap.corp/sap/support/message/%s".replace("%s", pattern), 0);
         }
