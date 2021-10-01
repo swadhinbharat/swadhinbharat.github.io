@@ -31,7 +31,7 @@ linkedin_username: swadhinpatel
 
 show_downloads: true
 google_analytics: UA-577898-12
-theme: jekyll-theme-midnight
+theme: jekyll-theme-architect
 
 # Build settings
 plugins:
