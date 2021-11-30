@@ -1,7 +1,7 @@
 # swadhinbharat.github.io
 Swadhin
 
-Run
+*Run
 ```Shell
 bundle exec jekyll serve --livereload
 ```
