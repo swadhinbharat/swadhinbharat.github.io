@@ -90,7 +90,7 @@ PLATFORMS
 
 DEPENDENCIES
   eventmachine (= 1.2.7)!
-  jekyll (~> 4.2.1)
+  jekyll
   jekyll-feed
   jekyll-seo-tag
   jekyll-sitemap
