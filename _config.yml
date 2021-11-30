@@ -15,8 +15,42 @@ plugins:
   - jekyll-remote-theme
 
 remote_theme: jekyll/minima
-# minima:
-#   skin: dark
+minima:
+  # skin: dark
+  date_format: "%b %-d, %Y"
+
+  # generate social links in footer
+  social_links:
+    twitter: swadhinbharat
+    github:  swadhinbharat
+    # devto: jekyll
+    # dribbble: jekyll
+    facebook: swadhin
+    # flickr:   jekyll
+    instagram: swadhin
+    linkedin: swadhinpatel
+    # pinterest: jekyll
+    youtube: swadhinbharat
+    # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
+    # youtube_channel_name: CloudCannon
+    # telegram: jekyll
+    # googleplus: +jekyll
+    # microdotblog: jekyll
+    # keybase: jekyll
+
+    # Mastodon instances
+    # mastodon:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
+
+    # GitLab instances
+    # gitlab:
+    # - username: jekyll
+    #   instance: example.com
+    # - username: jekyll2
+    #   instance: example.com
 
 exclude:
   - .sass-cache/
