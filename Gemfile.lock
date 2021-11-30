@@ -283,6 +283,7 @@ PLATFORMS
 DEPENDENCIES
   eventmachine (= 1.2.7)!
   github-pages
+  jekyll
   jekyll-feed
   jekyll-seo-tag
   jekyll-sitemap
