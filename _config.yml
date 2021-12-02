@@ -6,7 +6,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://swadh.in"
 twitter_username: swadhinbharat
 github_username:  swadhinbharat
-
+google_analytics: G-JTCFLHT968
 # Build settings
 # theme: minima
 
