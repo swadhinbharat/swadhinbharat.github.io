@@ -52,6 +52,12 @@ minima:
     # - username: jekyll2
     #   instance: example.com
 
+header_pages:
+  - blogs.md
+  - quotes.md
+  - projects.md
+  - about.md
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
