@@ -5,3 +5,4 @@ permalink: /quotes/
 ---
 
 - You never win the silver; you always lose the gold.
+- Life's not Easy. Then again, who wanted an easy life!
