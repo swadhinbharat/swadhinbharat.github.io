@@ -8,3 +8,4 @@ permalink: /projects/
 - [opener](/opener)
 - [opensap](/opensap)
 - [sign](/sign)
+- [Open Multiple URLs](/multipageopener)
