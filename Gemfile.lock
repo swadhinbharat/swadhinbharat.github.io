@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/jekyll/minima.git
-  revision: ffdb3210adabbd0a04f567ff88aa716928d664d0
+  revision: 0e58c18c1f943731e76bdbd681a7748c0b36340c
   specs:
     minima (2.5.1)
       jekyll (>= 3.5, < 5.0)
@@ -16,8 +16,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
-    addressable (2.8.0)
-      public_suffix (>= 2.0.2, < 5.0)
+    addressable (2.8.1)
+      public_suffix (>= 2.0.2, < 6.0)
     coffee-script (2.4.1)
       coffee-script-source
       execjs
