@@ -14,3 +14,4 @@ permalink: /quotes/
 - A Hero has to win always. A Villain has to win only once.
 - The more you sweat in peace, the less you bleed in war.
 - The early bird gets the worm, but the second mouse gets the cheese.
+- You have to find your specs without your specs.
