@@ -7,5 +7,4 @@ permalink: /projects/
 - [funds](/projects/funds)
 - [opener](/opener)
 - [opensap](/opensap)
-- [sign](/sign)
 - [Open Multiple URLs](/multipageopener)
