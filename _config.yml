@@ -19,18 +19,33 @@ minima:
   # skin: dark
   date_format: "%b %-d, %Y"
 
-  # generate social links in footer
   social_links:
-    twitter: swadhinbharat
-    github:  swadhinbharat
-    # devto: jekyll
-    # dribbble: jekyll
-    facebook: swadhin
-    # flickr:   jekyll
-    instagram: swadhin
-    linkedin: swadhinpatel
+    # - { platform: devto,          user_url: "https://dev.to/swadhin" }
+    - { platform: facebook,       user_url: "https://www.facebook.com/swadhin" }
+    - { platform: github,         user_url: "https://github.com/swadhinbharat" }
+    - { platform: instagram,      user_url: "https://www.instagram.com/swadhin" }
+    # - { platform: keybase,        user_url: "https://keybase.io/swadhin" }
+    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/swadhinpatel" }
+    # - { platform: microdotblog,   user_url: "https://micro.blog/swadhin" }
+    # - { platform: pinterest,      user_url: "https://in.pinterest.com/swadhin/" }
+    - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/760901/swadhin" }
+    # - { platform: telegram,       user_url: "https://t.me/swadhinbharat" }
+    - { platform: twitter,        user_url: "https://twitter.com/swadhinbharat" }
+    - { platform: youtube,        user_url: "https://www.youtube.com/@swadhinbharat" }
+
+
+  # # generate social links in footer
+  # social_links:
+  #   twitter: swadhinbharat
+  #   github:  swadhinbharat
+  #   # devto: jekyll
+  #   # dribbble: jekyll
+  #   facebook: swadhin
+  #   # flickr:   jekyll
+  #   instagram: swadhin
+  #   linkedin: swadhinpatel
     # pinterest: jekyll
-    youtube: "@swadhinbharat"
+    # youtube: "@swadhinbharat"
     # youtube_channel: UC8CXR0-3I70i1tfPg1PAE1g
     # youtube_channel_name: CloudCannon
     # telegram: jekyll
