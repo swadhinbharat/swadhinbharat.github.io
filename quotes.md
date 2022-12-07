@@ -15,3 +15,4 @@ permalink: /quotes/
 - The more you sweat in peace, the less you bleed in war.
 - The early bird gets the worm, but the second mouse gets the cheese.
 - You have to find your specs without your specs.
+- It is possible to commit no mistakes and still lose. That is not a weakness. That is life.
