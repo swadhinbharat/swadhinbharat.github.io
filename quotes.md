@@ -16,3 +16,4 @@ permalink: /quotes/
 - The early bird gets the worm, but the second mouse gets the cheese.
 - You have to find your specs without your specs.
 - It is possible to commit no mistakes and still lose. That is not a weakness. That is life.
+- It's Only "Failure" If You Don't Learn From It
