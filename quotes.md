@@ -18,3 +18,4 @@ permalink: /quotes/
 - It is possible to commit no mistakes and still lose. That is not a weakness. That is life.
 - It's Only "Failure" If You Don't Learn From It
 - "Knowledge will give you power, but character respect." - Bruce Lee
+“Twice the pride double the fall” - Count Dooku
