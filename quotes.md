@@ -19,4 +19,4 @@ permalink: /quotes/
 - It's Only "Failure" If You Don't Learn From It
 - "Knowledge will give you power, but character respect." - Bruce Lee
 - "Twice the pride double the fall" - Count Dooku
-- "When you're happy, you enjoy the music but when you're sad, you undestand the lyrics." - Frank Ocean
+- "When you're happy, you enjoy the music but when you're sad, you understand the lyrics." - Frank Ocean
