@@ -14,11 +14,11 @@ permalink: /quotes/
 - A Hero has to win always. A Villain has to win only once.
 - The more you sweat in peace, the less you bleed in war.
 - The early bird gets the worm, but the second mouse gets the cheese.
-- You have to find your specs without your specs.
+- You have to find your specs without your specs. - Swadhin Patel
 - It is possible to commit no mistakes and still lose. That is not a weakness. That is life.
 - It's Only "Failure" If You Don't Learn From It
-- "Knowledge will give you power, but character respect." - Bruce Lee
-- "Twice the pride double the fall" - Count Dooku
-- "When you're happy, you enjoy the music but when you're sad, you understand the lyrics." - Frank Ocean
-- "No man ever steps in the same river twice, for it's not the same river and he's not the same man." - Heraclitus
-- "a falling knife has no handle" 
+- Knowledge will give you power, but character respect. - Bruce Lee
+- Twice the pride double the fall - Count Dooku
+- When you're happy, you enjoy the music but when you're sad, you understand the lyrics. - Frank Ocean
+- No man ever steps in the same river twice, for it's not the same river and he's not the same man. - Heraclitus
+- a falling knife has no handle
