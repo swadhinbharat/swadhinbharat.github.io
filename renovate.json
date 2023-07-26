@@ -4,13 +4,19 @@
   ],
   "packageRules": [
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
-      "automerge": true
+      "matchUpdateTypes": ["*"],
+      "automerge": true,
+      "automergeType": "branch",
+      "ignoreTests": true
     },
     {
       "matchDepTypes": ["devDependencies"],
-      "automerge": true
+      "automerge": true,
+      "automergeType": "branch",
+      "ignoreTests": true
     }
   ],
-  "platformAutomerge": true
+  "platformAutomerge": true,
+  "automergeType": "branch",
+  "ignoreTests": true
 }
