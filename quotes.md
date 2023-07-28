@@ -22,3 +22,4 @@ permalink: /quotes/
 - When you're happy, you enjoy the music but when you're sad, you understand the lyrics. - Frank Ocean
 - No man ever steps in the same river twice, for it's not the same river and he's not the same man. - Heraclitus
 - a falling knife has no handle
+- To the monsters, we're the monsters
