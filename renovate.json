@@ -7,16 +7,19 @@
       "matchUpdateTypes": ["*"],
       "automerge": true,
       "automergeType": "branch",
-      "ignoreTests": true
+      "ignoreTests": true,
+      "rebaseWhen": "auto"
     },
     {
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
       "automergeType": "branch",
-      "ignoreTests": true
+      "ignoreTests": true,
+      "rebaseWhen": "auto"
     }
   ],
   "platformAutomerge": true,
   "automergeType": "branch",
-  "ignoreTests": true
+  "ignoreTests": true,
+  "rebaseWhen": "auto"
 }
