@@ -24,3 +24,4 @@ permalink: /quotes/
 - a falling knife has no handle
 - To the monsters, we're the monsters
 - The first step in solving a problem is recognizing there is one - Will Mcavoy
+- I'd rather be told the cruel truth than be fed gentle lies.
