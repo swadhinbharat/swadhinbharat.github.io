@@ -25,3 +25,4 @@ permalink: /quotes/
 - To the monsters, we're the monsters
 - The first step in solving a problem is recognizing there is one - Will Mcavoy
 - I'd rather be told the cruel truth than be fed gentle lies.
+- Knowledge is knowing that a tomato is a fruit; wisdom is not putting it in a fruit salad. - Miles Kington
