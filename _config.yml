@@ -69,10 +69,11 @@ minima:
 
 header_pages:
   - blogs.md
+  - collections.md
   - quotes.md
   - projects.md
   - about.md
-
+  
 exclude:
   - .sass-cache/
   - .jekyll-cache/
