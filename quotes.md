@@ -28,3 +28,4 @@ permalink: /quotes/
 - Knowledge is knowing that a tomato is a fruit; wisdom is not putting it in a fruit salad. - Miles Kington
 - There are three sides to every story
 - The voyage of discovery isn’t about new lands but having new eyes. - Marcel Proust
+- Ware the man who fakes a limp. - The Gunslinger
