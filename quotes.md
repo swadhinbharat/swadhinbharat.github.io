@@ -29,3 +29,4 @@ permalink: /quotes/
 - There are three sides to every story
 - The voyage of discovery isn’t about new lands but having new eyes. - Marcel Proust
 - Ware the man who fakes a limp. - The Gunslinger
+- Pray for rain all you like, but dig a well as you do it. - Stephen King
