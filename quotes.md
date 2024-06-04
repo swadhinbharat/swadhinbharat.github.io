@@ -31,3 +31,4 @@ permalink: /quotes/
 - Ware the man who fakes a limp. - The Gunslinger
 - Pray for rain all you like, but dig a well as you do it. - Stephen King
 - Action precedes Motivation. - Robert McKain
+- When you judge another, you do not define them, you define yourself. - Wayne Dyer
