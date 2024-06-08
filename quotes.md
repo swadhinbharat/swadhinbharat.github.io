@@ -24,7 +24,7 @@ permalink: /quotes/
 - a falling knife has no handle
 - To the monsters, we're the monsters
 - The first step in solving a problem is recognizing there is one - Will Mcavoy
-- I'd rather be told the cruel truth than be fed gentle lies.
+- I'd rather be told the cruel truth than be fed gentle lies.- High and Low
 - Knowledge is knowing that a tomato is a fruit; wisdom is not putting it in a fruit salad. - Miles Kington
 - There are three sides to every story
 - The voyage of discovery isn’t about new lands but having new eyes. - Marcel Proust
