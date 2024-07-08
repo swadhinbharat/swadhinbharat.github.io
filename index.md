@@ -4,8 +4,4 @@
 
 layout: home
 ---
-First
-
-Second
-
-Third
+Hi! Please check out my details in [About](/about/) page. 
