@@ -34,3 +34,4 @@ permalink: /quotes/
 - When you judge another, you do not define them, you define yourself. - Wayne Dyer
 - Bad decision is bad decision. No matter you win or lose. - Swadhin Patel
 - If it's a bug people rely on, it's not a bug. It's a feature. - Linus Torvalds
+- You are your first critic. - Swadhin Patel
