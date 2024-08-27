@@ -36,4 +36,4 @@ permalink: /quotes/
 - If it's a bug people rely on, it's not a bug. It's a feature. - Linus Torvalds
 - You are your first critic. - Swadhin Patel
 - History isn't kind to men who play God. - James Bond
-- The Universe owes to shit. - Swadhin Patel
+- The Universe owes you shit. - Swadhin Patel
