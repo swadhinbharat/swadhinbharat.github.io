@@ -38,3 +38,4 @@ permalink: /quotes/
 - History isn't kind to men who play God. - James Bond
 - The Universe owes you shit. - Swadhin Patel
 - Don’t let perfect be the enemy of good.
+- A known enemy is better than an unknown friend.
