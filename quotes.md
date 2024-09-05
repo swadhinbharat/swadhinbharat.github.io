@@ -37,3 +37,4 @@ permalink: /quotes/
 - You are your first critic. - Swadhin Patel
 - History isn't kind to men who play God. - James Bond
 - The Universe owes you shit. - Swadhin Patel
+- Don’t let perfect be the enemy of good.
