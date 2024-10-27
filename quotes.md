@@ -39,4 +39,5 @@ permalink: /quotes/
 - The Universe owes you shit. - Swadhin Patel
 - Don’t let perfect be the enemy of good.
 - A known enemy is better than an unknown friend.
+- सुनो सबकी, करो मन की |
 - Good deeds are not excuse for bad deeds. - Swadhin Patel 
