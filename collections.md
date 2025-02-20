@@ -4,6 +4,10 @@ title: Collections
 permalink: /collections/
 ---
 
+
+## Learn. Earn. Return.
+[!['The Growth Gang - How to Achieve Your Goals](https://img.youtube.com/vi/V5_NCwS3PH0/0.jpg)](https://www.youtube.com/watch?v=V5_NCwS3PH0)
+
 ##  Idiot
 [!['Would an idiot do that': JB Pritzker's 'The Office' commencement speech at Northwestern University](https://img.youtube.com/vi/uWPFDpOJEME/0.jpg)](https://www.youtube.com/watch?v=uWPFDpOJEME)
 
