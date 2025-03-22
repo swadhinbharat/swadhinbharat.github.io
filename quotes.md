@@ -42,3 +42,4 @@ permalink: /quotes/
 - सुनो सबकी, करो मन की |
 - Good deeds are not excuse for bad deeds. - Swadhin Patel 
 - Everything will be okay in the end. If it's not okay, it's not the end. - John Lennon
+- Not every price has to be paid with money. - Swadhin Patel
