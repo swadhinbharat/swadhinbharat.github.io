@@ -14,7 +14,7 @@ plugins:
   - jekyll-feed
   - jekyll-remote-theme
 
-remote_theme: jekyll/minima
+remote_theme: "jekyll/minima@1e8a445"
 minima:
   # skin: dark
   date_format: "%b %-d, %Y"

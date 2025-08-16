@@ -20,6 +20,6 @@ end
 
 # Performance-booster for watching directories on Windows
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
-gem "webrick", "~> 1.8"
+gem "webrick", "~> 1.9"
 gem 'eventmachine', '1.2.7'
 gem "jekyll-commonmark-ghpages"
