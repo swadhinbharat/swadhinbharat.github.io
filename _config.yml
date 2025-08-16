@@ -41,9 +41,9 @@ minima:
     # - title: pinterest
     #   icon: pinterest
     #   url: "https://in.pinterest.com/swadhin/"
-    - title: stackoverflow
-      icon: stackoverflow
-      url: "https://stackoverflow.com/users/760901/swadhin"
+    # - title: stackoverflow
+    #   icon: stackoverflow
+    #   url: "https://stackoverflow.com/users/760901/swadhin"
     # - title: telegram
     #   icon: telegram
     #   url: "https://t.me/swadhinbharat"
