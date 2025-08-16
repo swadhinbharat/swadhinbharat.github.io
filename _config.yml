@@ -68,12 +68,15 @@ minima:
     #   instance: example.com
 
 header_pages:
-  - blogs.md
-  - collections.md
-  - quotes.md
-  - projects.md
-  - about.md
+  - _pages/blogs.md
+  - _pages/collections.md
+  - _pages/quotes.md
+  - _pages/projects.md
+  - _pages/about.md
   
+include:
+  - _pages
+
 exclude:
   - .sass-cache/
   - .jekyll-cache/
