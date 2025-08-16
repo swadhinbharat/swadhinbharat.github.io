@@ -1,7 +1,6 @@
 title: Swadhin
 email: me@swadh.in
-description: >- # this means to ignore newlines until "baseurl:"
-  Some random collection of interesting stuffs.
+description: Some random collection of interesting stuffs.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://swadh.in"
 twitter_username: swadhinbharat
@@ -21,17 +20,39 @@ minima:
 
   social_links:
     # - { platform: devto,          user_url: "https://dev.to/swadhin" }
-    - { platform: facebook,       user_url: "https://www.facebook.com/swadhin" }
-    - { platform: github,         user_url: "https://github.com/swadhinbharat" }
-    - { platform: instagram,      user_url: "https://www.instagram.com/swadhin" }
-    # - { platform: keybase,        user_url: "https://keybase.io/swadhin" }
-    - { platform: linkedin,       user_url: "https://www.linkedin.com/in/swadhinpatel" }
-    # - { platform: microdotblog,   user_url: "https://micro.blog/swadhin" }
-    # - { platform: pinterest,      user_url: "https://in.pinterest.com/swadhin/" }
-    - { platform: stackoverflow,  user_url: "https://stackoverflow.com/users/760901/swadhin" }
-    # - { platform: telegram,       user_url: "https://t.me/swadhinbharat" }
-    - { platform: twitter,        user_url: "https://twitter.com/swadhinbharat" }
-    - { platform: youtube,        user_url: "https://www.youtube.com/@swadhinbharat" }
+    - title: facebook
+      icon: facebook
+      url: "https://www.facebook.com/swadhin"
+    - title: github
+      icon: github
+      url: "https://github.com/swadhinbharat"
+    - title: instagram
+      icon: instagram
+      url: "https://www.instagram.com/swadhin"
+    # - title: keybase
+    #   icon: keybase
+    #   url: "https://keybase.io/swadhin"
+    - title: linkedin
+      icon: linkedin
+      url: "https://www.linkedin.com/in/swadhinpatel"
+    # - title: microdotblog
+    #   icon: microdotblog
+    #   url: "https://micro.blog/swadhin"
+    # - title: pinterest
+    #   icon: pinterest
+    #   url: "https://in.pinterest.com/swadhin/"
+    - title: stackoverflow
+      icon: stackoverflow
+      url: "https://stackoverflow.com/users/760901/swadhin"
+    # - title: telegram
+    #   icon: telegram
+    #   url: "https://t.me/swadhinbharat"
+    - title: twitter
+      icon: twitter
+      url: "https://twitter.com/swadhinbharat"
+    - title: youtube
+      icon: youtube
+      url: "https://www.youtube.com/@swadhinbharat"
 
 
   # # generate social links in footer

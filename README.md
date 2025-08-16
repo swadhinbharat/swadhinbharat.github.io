@@ -1,16 +1,21 @@
 # swadhinbharat.github.io
 Swadhin
 
-Run
+## Install
+```Bash
+bundle install
+```
+
+## Run
+
+Bash
 ```Bash
 bundle exec jekyll serve --livereload
 ```
 
-```WSL
+WSL
+```Bash
 bundle exec jekyll serve --force_polling --livereload
 ```
 
-Open URL
-```
-http://localhost:4000
-```
+Open URL [http://localhost:4000](http://localhost:4000)
