@@ -107,7 +107,7 @@ permalink: /quotes/
 </div>
 
 <div class="quote-item no-author">
-  <div class="quote-text">There are three sides to every story</div>
+  <div class="quote-text">There are three sides to every story.</div>
 </div>
 
 <div class="quote-item">
