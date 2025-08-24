@@ -2,6 +2,8 @@
 layout: page
 title: Quotes
 permalink: /quotes/
+description: "A collection of inspiring and thought-provoking quotes from various sources"
+keywords: "quotes, inspiration, wisdom, philosophy"
 ---
 
 <div class="quotes-container">
@@ -55,8 +57,9 @@ permalink: /quotes/
   <div class="quote-author">Swadhin Patel</div>
 </div>
 
-<div class="quote-item no-author">
+<div class="quote-item">
   <div class="quote-text">It is possible to commit no mistakes and still lose. That is not a weakness. That is life.</div>
+  <div class="quote-author">Captain Jean-Luc Picard</div>
 </div>
 
 <div class="quote-item no-author">
@@ -69,7 +72,7 @@ permalink: /quotes/
 </div>
 
 <div class="quote-item">
-  <div class="quote-text">Twice the pride double the fall</div>
+  <div class="quote-text">Twice the pride, double the fall.</div>
   <div class="quote-author">Count Dooku</div>
 </div>
 
@@ -84,7 +87,7 @@ permalink: /quotes/
 </div>
 
 <div class="quote-item no-author">
-  <div class="quote-text">a falling knife has no handle</div>
+  <div class="quote-text">A falling knife has no handle.</div>
 </div>
 
 <div class="quote-item no-author">
@@ -92,13 +95,12 @@ permalink: /quotes/
 </div>
 
 <div class="quote-item">
-  <div class="quote-text">The first step in solving a problem is recognizing there is one</div>
-  <div class="quote-author">Will Mcavoy</div>
+  <div class="quote-text">The first step in solving a problem is recognizing there is one.</div>
+  <div class="quote-author">Will McAvoy</div>
 </div>
 
-<div class="quote-item">
+<div class="quote-item no-author">
   <div class="quote-text">I'd rather be told the cruel truth than be fed gentle lies.</div>
-  <div class="quote-author">High and Low</div>
 </div>
 
 <div class="quote-item">
@@ -116,7 +118,7 @@ permalink: /quotes/
 </div>
 
 <div class="quote-item">
-  <div class="quote-text">Ware the man who fakes a limp.</div>
+  <div class="quote-text">Beware the man who fakes a limp.</div>
   <div class="quote-author">The Gunslinger</div>
 </div>
 
@@ -150,13 +152,12 @@ permalink: /quotes/
   <div class="quote-author">Swadhin Patel</div>
 </div>
 
-<div class="quote-item">
+<div class="quote-item no-author">
   <div class="quote-text">History isn't kind to men who play God.</div>
-  <div class="quote-author">James Bond</div>
 </div>
 
 <div class="quote-item">
-  <div class="quote-text">The Universe owes you shit.</div>
+  <div class="quote-text">The Universe owes you nothing.</div>
   <div class="quote-author">Swadhin Patel</div>
 </div>
 
@@ -173,7 +174,7 @@ permalink: /quotes/
 </div>
 
 <div class="quote-item">
-  <div class="quote-text">Good deeds are not excuse for bad deeds.</div>
+  <div class="quote-text">Good deeds are not an excuse for bad deeds.</div>
   <div class="quote-author">Swadhin Patel</div>
 </div>
 
@@ -187,9 +188,8 @@ permalink: /quotes/
   <div class="quote-author">Swadhin Patel</div>
 </div>
 
-<div class="quote-item">
+<div class="quote-item no-author">
   <div class="quote-text">In pursuit of great, we failed to do good.</div>
-  <div class="quote-author">Viktor</div>
 </div>
 
 </div>
