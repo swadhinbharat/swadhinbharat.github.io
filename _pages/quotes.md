@@ -192,8 +192,9 @@ permalink: /quotes/
   <div class="quote-author">Viktor</div>
 </div>
 
-<div class="quote-item no-author">
+<div class="quote-item">
   <div class="quote-text">The axe forgets, but the tree remembers.</div>
+  <div class="quote-author">African Proverb</div>
 </div>
 
 </div>
