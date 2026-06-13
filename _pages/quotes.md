@@ -197,4 +197,9 @@ permalink: /quotes/
   <div class="quote-author">African Proverb</div>
 </div>
 
+<div class="quote-item">
+  <div class="quote-text">A goal without a plan is just a wish.</div>
+  <div class="quote-author">Antoine de Saint-Exupéry</div>
+</div>
+
 </div>
