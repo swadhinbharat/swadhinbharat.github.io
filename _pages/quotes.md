@@ -202,4 +202,8 @@ permalink: /quotes/
   <div class="quote-author">Antoine de Saint-Exupéry</div>
 </div>
 
+<div class="quote-item no-author">
+  <div class="quote-text">Love Is a Verb, Not a Noun</div>
+</div>
+
 </div>
