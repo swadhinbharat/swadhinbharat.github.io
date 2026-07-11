@@ -206,4 +206,8 @@ permalink: /quotes/
   <div class="quote-text">Love Is a Verb, Not a Noun</div>
 </div>
 
+<div class="quote-item no-author">
+  <div class="quote-text">Art will always be bigger than the artist</div>
+</div>
+
 </div>
