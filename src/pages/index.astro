@@ -1,0 +1,61 @@
+---
+import Base from '../layouts/Base.astro';
+
+const expertise = [
+  { title: 'SAP S/4HANA', text: 'Guiding customers through their journey to S/4HANA, from architecture to cutover.' },
+  { title: 'Cloud migration', text: 'Moving SAP landscapes and workloads to the cloud with pragmatic, low-risk approaches.' },
+  { title: 'SAP BTP', text: 'Cloud-native apps with the SAP Cloud Application Programming Model (CAP) and SAP Fiori Elements.' },
+  { title: 'Kubernetes & Kyma', text: 'Deploying on Cloud Foundry and Kyma runtime. Google Certified Kubernetes Application Developer (CKAD).' },
+];
+const stack = ['SAP S/4HANA', 'SAP BTP', 'SAP CAP', 'Fiori Elements', 'Cloud Foundry', 'Kyma', 'Kubernetes', 'CKAD'];
+const projects = [
+  { name: 'Opener', text: 'Open a link quickly.', url: '/opener' },
+  { name: 'Open Multiple URLs', text: 'Open many URLs in one go.', url: '/multipageopener' },
+  { name: 'openSAP', text: 'Helper for openSAP courses.', url: '/opensap' },
+];
+---
+<Base>
+  <section class="hero container">
+    <p class="eyebrow"><span class="dot"></span> Technical Architect · SAP · Cloud</p>
+    <h1>Hi, I’m <span class="grad">Swadhin</span>.<br />I build for the SAP cloud.</h1>
+    <p class="lead">I help customers get to SAP S/4HANA and the cloud, and build cloud-native apps on SAP BTP with CAP, Fiori Elements, Cloud Foundry and Kyma.</p>
+    <div class="cta">
+      <a class="btn primary" href="#projects">See my work</a>
+      <a class="btn" href="https://flowcv.com/resume/4r0nje4jj7" target="_blank" rel="noopener">Résumé ↗</a>
+      <a class="btn" href="https://www.linkedin.com/in/swadhinpatel" target="_blank" rel="noopener">LinkedIn ↗</a>
+    </div>
+    <ul class="chips" aria-label="Technologies">{stack.map((s) => <li>{s}</li>)}</ul>
+  </section>
+
+  <section id="about" class="container section">
+    <h2 class="section-title">About</h2>
+    <p class="about">
+      I’m a Technical Architect with extensive experience in SAP technology and a deep interest in cloud. I hold multiple SAP certifications on SAP cloud technology and the Google CKAD certification. My recent work is creating cloud-native applications for SAP Business Technology Platform using the SAP Cloud Application Programming Model and SAP Fiori Elements, on Cloud Foundry and Kyma runtime.
+    </p>
+  </section>
+
+  <section id="expertise" class="container section">
+    <h2 class="section-title">Expertise</h2>
+    <div class="grid">
+      {expertise.map((e) => (
+        <article class="card"><h3>{e.title}</h3><p>{e.text}</p></article>
+      ))}
+    </div>
+  </section>
+
+  <section id="projects" class="container section">
+    <h2 class="section-title">Projects</h2>
+    <div class="grid">
+      {projects.map((p) => (
+        <a class="card link" href={p.url}><h3>{p.name} <span class="arrow">→</span></h3><p>{p.text}</p></a>
+      ))}
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="banner">
+      <div><h2>Words &amp; moments worth keeping</h2><p>A collection of quotes and talks that stuck with me.</p></div>
+      <div class="cta"><a class="btn primary" href="/quotes/">Quotes</a><a class="btn" href="/collections/">Collections</a></div>
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,19 @@
+---
+import Base from '../layouts/Base.astro';
+import quotes from '../data/quotes.json';
+const hindi = /[ऀ-ॿ]/;
+---
+<Base title="Quotes" description="A collection of quotes worth remembering.">
+  <section class="container page">
+    <h1 class="page-title">Quotes</h1>
+    <p class="muted">Lines worth remembering.</p>
+    <div class="quotes">
+      {quotes.map((q) => (
+        <figure class="quote">
+          <blockquote class={hindi.test(q.text) ? 'hindi' : ''}>{q.text}</blockquote>
+          {q.author && <figcaption>{q.author}</figcaption>}
+        </figure>
+      ))}
+    </div>
+  </section>
+</Base>

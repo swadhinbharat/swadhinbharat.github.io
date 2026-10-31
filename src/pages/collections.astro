@@ -1,0 +1,25 @@
+---
+import Base from '../layouts/Base.astro';
+const videos = [
+  { id: 'V5_NCwS3PH0', title: 'Learn. Earn. Return.', desc: 'The Growth Gang - How to Achieve Your Goals' },
+  { id: 'uWPFDpOJEME', title: 'Idiot', desc: "'Would an idiot do that': JB Pritzker's 'The Office' commencement speech at Northwestern University" },
+  { id: 'ULRosL7AOpk', title: 'Average is the New Exceptional', desc: 'Binghamton University Commencement remarks' },
+  { id: 'DRiV4KZBoIY', title: 'Aelios', desc: 'Aelios' },
+  { id: '8b0ubLO2MUE', title: 'Yuvraj Singh', desc: 'Yuvraj Singh slams six sixes off Stuart Broad | ENG v IND | T20 World Cup 2007' },
+];
+---
+<Base title="Collections" description="Talks and moments I keep coming back to.">
+  <section class="container page">
+    <h1 class="page-title">Collections</h1>
+    <p class="muted">Talks and moments I keep coming back to.</p>
+    <div class="grid videos">
+      {videos.map((v) => (
+        <a class="video" href={`https://www.youtube.com/watch?v=${v.id}`} target="_blank" rel="noopener">
+          <img src={`https://img.youtube.com/vi/${v.id}/hqdefault.jpg`} alt="" loading="lazy" />
+          <h3>{v.title}</h3>
+          <p>{v.desc}</p>
+        </a>
+      ))}
+    </div>
+  </section>
+</Base>

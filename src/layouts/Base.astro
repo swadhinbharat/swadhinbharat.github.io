@@ -1,0 +1,69 @@
+---
+import '../styles/global.css';
+interface Props { title?: string; description?: string }
+const { title, description = 'Technical Architect specialising in SAP S/4HANA, SAP BTP and cloud-native applications.' } = Astro.props;
+const fullTitle = title ? `${title} · Swadhin Patel` : 'Swadhin Patel · Technical Architect';
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const nav = [
+  { href: '/#about', label: 'About' },
+  { href: '/#expertise', label: 'Expertise' },
+  { href: '/#projects', label: 'Projects' },
+  { href: '/quotes/', label: 'Quotes' },
+  { href: '/collections/', label: 'Collections' },
+];
+const social = [
+  { label: 'GitHub', url: 'https://github.com/swadhinbharat' },
+  { label: 'LinkedIn', url: 'https://www.linkedin.com/in/swadhinpatel' },
+  { label: 'X', url: 'https://twitter.com/swadhinbharat' },
+  { label: 'YouTube', url: 'https://www.youtube.com/@swadhinbharat' },
+  { label: 'Instagram', url: 'https://www.instagram.com/swadhin' },
+  { label: 'Facebook', url: 'https://www.facebook.com/swadhin' },
+];
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta name="theme-color" content="#0b0f14" />
+    <link rel="icon" href="/assets/img/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png" />
+    <link rel="apple-touch-icon" href="/assets/img/favicon/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600&display=swap" rel="stylesheet" />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-JTCFLHT968"></script>
+    <script is:inline>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date()); gtag('config', 'G-JTCFLHT968');
+    </script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="nav">
+      <div class="container nav-inner">
+        <a class="brand" href="/">swadhin<span>.</span></a>
+        <input type="checkbox" id="menu" class="menu-check" />
+        <label for="menu" class="menu-btn" aria-label="Toggle menu"><span></span></label>
+        <nav class="links" aria-label="Primary">
+          {nav.map((n) => <a href={n.href}>{n.label}</a>)}
+          <a class="pill" href="https://flowcv.com/resume/4r0nje4jj7" target="_blank" rel="noopener">Résumé ↗</a>
+        </nav>
+      </div>
+    </header>
+    <main id="main"><slot /></main>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© {new Date().getFullYear()} Swadhin Patel</p>
+        <ul>{social.map((s) => <li><a href={s.url} rel="me noopener" target="_blank">{s.label}</a></li>)}</ul>
+      </div>
+    </footer>
+  </body>
+</html>

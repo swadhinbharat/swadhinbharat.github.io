@@ -1,21 +1,14 @@
 # swadhinbharat.github.io
-Swadhin
 
-## Install
-```Bash
-bundle install
+Personal site for [swadh.in](https://swadh.in), built with [Astro](https://astro.build).
+
+```bash
+npm install
+npm run dev      # http://localhost:4321
+npm run build    # outputs to dist/
 ```
 
-## Run
+Pushes to `main` deploy via GitHub Actions (`.github/workflows/deploy.yml`).
+In the repo settings, set **Pages → Source** to **GitHub Actions**.
 
-Bash
-```Bash
-bundle exec jekyll serve --livereload
-```
-
-WSL
-```Bash
-bundle exec jekyll serve --force_polling --livereload
-```
-
-Open URL [http://localhost:4000](http://localhost:4000)
+Quotes live in `src/data/quotes.json`. Static files (favicons, `/files`) live in `public/`.
