@@ -5,5 +5,5 @@ export default defineConfig({
   site: 'https://swadh.in',
   integrations: [sitemap()],
   // Old Jekyll URL
-  redirects: { '/about': '/#about' },
+  redirects: { '/about': '/' },
 });
