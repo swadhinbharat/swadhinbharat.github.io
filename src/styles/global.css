@@ -119,3 +119,10 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.75rem); line-height: 1.05; letter-spacing: 
 .certs.past .cert { background: transparent; border-style: dashed; }
 .certs.past .cert img { filter: grayscale(1); opacity: .6; transition: filter .2s, opacity .2s; }
 .certs.past .cert:hover img { filter: none; opacity: 1; }
+
+/* Contact */
+.contact { display: flex; flex-wrap: wrap; gap: 1.5rem; align-items: center; justify-content: space-between; padding: 2rem; border-radius: 20px; border: 1px solid var(--border); background: var(--surface); }
+.contact h2 { margin: 0 0 .35rem; font-size: 1.5rem; letter-spacing: -.02em; }
+.contact p { margin: 0; color: var(--muted); max-width: 32rem; }
+button.btn { font: inherit; font-weight: 600; font-size: .95rem; color: inherit; cursor: pointer; }
+[hidden] { display: none !important; }

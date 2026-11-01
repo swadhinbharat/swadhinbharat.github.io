@@ -91,6 +91,19 @@ const stack = ['SAP S/4HANA', 'SAP BTP', 'SAP CAP', 'Fiori Elements', 'Cloud Fou
     <p class="muted more"><a href="https://www.credly.com/users/swadhin" target="_blank" rel="noopener">All badges on Credly ↗</a></p>
   </section>
 
+  <section id="contact" class="container section">
+    <div class="contact">
+      <div>
+        <h2>Get in touch</h2>
+        <p>Open to conversations about SAP BTP, cloud architecture and interesting problems. LinkedIn is the fastest way to reach me.</p>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="https://www.linkedin.com/in/swadhinpatel" target="_blank" rel="noopener">Message on LinkedIn ↗</a>
+        <button class="btn" type="button" id="reveal-email" data-u="me" data-d="swadh.in" hidden>Reveal email</button>
+      </div>
+    </div>
+  </section>
+
   <section class="container section">
     <div class="banner">
       <div><h2>Words &amp; moments worth keeping</h2><p>A collection of quotes and talks that stuck with me.</p></div>
@@ -98,3 +111,19 @@ const stack = ['SAP S/4HANA', 'SAP BTP', 'SAP CAP', 'Fiori Elements', 'Cloud Fou
     </div>
   </section>
 </Base>
+
+<script>
+  // The address is assembled in the browser on click so it never appears in the page source for scrapers.
+  const btn = document.getElementById('reveal-email') as HTMLButtonElement | null;
+  if (btn) {
+    btn.hidden = false;
+    btn.addEventListener('click', () => {
+      const addr = `${btn.dataset.u}@${btn.dataset.d}`;
+      const a = document.createElement('a');
+      a.className = 'btn';
+      a.href = `mailto:${addr}`;
+      a.textContent = addr;
+      btn.replaceWith(a);
+    }, { once: true });
+  }
+</script>
