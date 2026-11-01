@@ -1,5 +1,7 @@
 ---
+import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
+import photo from '../assets/swadhin.jpg';
 
 const expertise = [
   { title: 'SAP S/4HANA', text: 'Guiding customers through their journey to S/4HANA, from architecture to cutover.' },
@@ -11,15 +13,20 @@ const stack = ['SAP S/4HANA', 'SAP BTP', 'SAP CAP', 'Fiori Elements', 'Cloud Fou
 ---
 <Base>
   <section class="hero container">
-    <p class="eyebrow"><span class="dot"></span> Technical Architect · SAP · Cloud</p>
-    <h1>Hi, I’m <span class="grad">Swadhin</span>.<br />I build for the SAP cloud.</h1>
-    <p class="lead">I help customers get to SAP S/4HANA and the cloud, and build cloud-native apps on SAP BTP with CAP, Fiori Elements, Cloud Foundry and Kyma.</p>
-    <div class="cta">
-      <a class="btn primary" href="#expertise">What I do</a>
-      <a class="btn" href="https://flowcv.com/resume/4r0nje4jj7" target="_blank" rel="noopener">Résumé ↗</a>
-      <a class="btn" href="https://www.linkedin.com/in/swadhinpatel" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <div class="hero-text">
+      <p class="eyebrow"><span class="dot"></span> Technical Architect · SAP · Cloud</p>
+      <h1>Hi, I’m <span class="grad">Swadhin</span>.<br />I build for the SAP cloud.</h1>
+      <p class="lead">I help customers get to SAP S/4HANA and the cloud, and build cloud-native apps on SAP BTP with CAP, Fiori Elements, Cloud Foundry and Kyma.</p>
+      <div class="cta">
+        <a class="btn primary" href="#expertise">What I do</a>
+        <a class="btn" href="https://flowcv.com/resume/4r0nje4jj7" target="_blank" rel="noopener">Résumé ↗</a>
+        <a class="btn" href="https://www.linkedin.com/in/swadhinpatel" target="_blank" rel="noopener">LinkedIn ↗</a>
+      </div>
+      <ul class="chips" aria-label="Technologies">{stack.map((s) => <li>{s}</li>)}</ul>
     </div>
-    <ul class="chips" aria-label="Technologies">{stack.map((s) => <li>{s}</li>)}</ul>
+    <div class="portrait">
+      <Image src={photo} alt="Portrait of Swadhin Patel" width={360} height={360} loading="eager" format="webp" quality={82} />
+    </div>
   </section>
 
   <section id="about" class="container section">
