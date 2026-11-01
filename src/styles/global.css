@@ -115,3 +115,7 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.75rem); line-height: 1.05; letter-spacing: 
 .cert p { margin: 0; color: var(--muted); font-size: .85rem; }
 .more { margin: 1rem 0 0; font-size: .9rem; }
 .more a { color: var(--accent); }
+.subhead { margin: 2.25rem 0 .9rem; font-size: .8rem; text-transform: uppercase; letter-spacing: .12em; color: var(--muted); font-weight: 600; }
+.certs.past .cert { background: transparent; border-style: dashed; }
+.certs.past .cert img { filter: grayscale(1); opacity: .6; transition: filter .2s, opacity .2s; }
+.certs.past .cert:hover img { filter: none; opacity: 1; }
