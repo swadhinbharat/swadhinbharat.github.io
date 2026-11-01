@@ -1,0 +1,98 @@
+[
+  {
+    "id": "790ba98b-c431-429d-9fc1-b1e2fc518291",
+    "name": "Solution Architect - SAP Business AI Platform",
+    "issuer": "SAP",
+    "issued": "2026-10-20",
+    "expires": "2027-10-21",
+    "url": "https://www.credly.com/badges/790ba98b-c431-429d-9fc1-b1e2fc518291"
+  },
+  {
+    "id": "96e8d407-fa32-4900-a7e7-cb915cd0c8c2",
+    "name": "Positioning the Autonomous Enterprise",
+    "issuer": "SAP",
+    "issued": "2026-08-06",
+    "expires": "2027-08-07",
+    "url": "https://www.credly.com/badges/96e8d407-fa32-4900-a7e7-cb915cd0c8c2"
+  },
+  {
+    "id": "50892b04-7e03-42de-bb4d-835cea088d9e",
+    "name": "SAP Business Data Cloud",
+    "issuer": "SAP",
+    "issued": "2026-01-31",
+    "expires": "2027-02-01",
+    "url": "https://www.credly.com/badges/50892b04-7e03-42de-bb4d-835cea088d9e"
+  },
+  {
+    "id": "89a27b4e-ba75-41f7-9828-c5afd5b98abe",
+    "name": "SAP Build Developer",
+    "issuer": "SAP",
+    "issued": "2026-01-21",
+    "expires": "2027-01-22",
+    "url": "https://www.credly.com/badges/89a27b4e-ba75-41f7-9828-c5afd5b98abe"
+  },
+  {
+    "id": "27b4c828-2cda-40b8-8cd2-7a03d10b8064",
+    "name": "SAP Business AI Platform Administrator",
+    "issuer": "SAP",
+    "issued": "2026-01-18",
+    "expires": "2028-01-20",
+    "url": "https://www.credly.com/badges/27b4c828-2cda-40b8-8cd2-7a03d10b8064"
+  },
+  {
+    "id": "b7be4376-7ee9-4e7f-8e91-36e1b0c37559",
+    "name": "SAP Generative AI Developer",
+    "issuer": "SAP",
+    "issued": "2026-01-06",
+    "expires": "2028-01-08",
+    "url": "https://www.credly.com/badges/b7be4376-7ee9-4e7f-8e91-36e1b0c37559"
+  },
+  {
+    "id": "2a0c9916-3d0e-4172-8574-742345d8d04d",
+    "name": "Solution Architect - SAP BTP",
+    "issuer": "SAP",
+    "issued": "2025-02-19",
+    "expires": "2027-10-20",
+    "url": "https://www.credly.com/badges/2a0c9916-3d0e-4172-8574-742345d8d04d"
+  },
+  {
+    "id": "3d4b0957-68ab-48ee-b8dc-f55cdcecfcb4",
+    "name": "Back-End Developer - ABAP Cloud",
+    "issuer": "SAP",
+    "issued": "2025-01-06",
+    "expires": "2027-11-18",
+    "url": "https://www.credly.com/badges/3d4b0957-68ab-48ee-b8dc-f55cdcecfcb4"
+  },
+  {
+    "id": "3bbce08d-597b-47db-9be9-0f7174e07542",
+    "name": "Integration Developer",
+    "issuer": "SAP",
+    "issued": "2023-07-15",
+    "expires": "2028-01-07",
+    "url": "https://www.credly.com/badges/3bbce08d-597b-47db-9be9-0f7174e07542"
+  },
+  {
+    "id": "fa3f1e06-d7a3-4168-8b55-f532d4ff6294",
+    "name": "Backend Developer - SAP Cloud Application Programming Model",
+    "issuer": "SAP",
+    "issued": "2023-02-12",
+    "expires": "2027-11-18",
+    "url": "https://www.credly.com/badges/fa3f1e06-d7a3-4168-8b55-f532d4ff6294"
+  },
+  {
+    "id": "eb2a82c5-ec37-4213-b5ef-a9432d2478f5",
+    "name": "CKAD: Certified Kubernetes Application Developer",
+    "issuer": "The Linux Foundation",
+    "issued": "2023-01-30",
+    "expires": "2026-01-30",
+    "url": "https://www.credly.com/badges/eb2a82c5-ec37-4213-b5ef-a9432d2478f5"
+  },
+  {
+    "id": "98a16195-b672-4cd9-959c-2e2d65a4dbe1",
+    "name": "SAP Fiori Application Developer",
+    "issuer": "SAP",
+    "issued": "2022-04-25",
+    "expires": "2027-12-15",
+    "url": "https://www.credly.com/badges/98a16195-b672-4cd9-959c-2e2d65a4dbe1"
+  }
+]
