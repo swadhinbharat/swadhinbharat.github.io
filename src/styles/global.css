@@ -126,3 +126,18 @@ h1 { font-size: clamp(2.5rem, 8vw, 4.75rem); line-height: 1.05; letter-spacing: 
 .contact p { margin: 0; color: var(--muted); max-width: 32rem; }
 button.btn { font: inherit; font-weight: 600; font-size: .95rem; color: inherit; cursor: pointer; }
 [hidden] { display: none !important; }
+
+/* Experience timeline */
+.timeline { list-style: none; margin: 0; padding: 0 0 0 1.5rem; border-left: 2px solid var(--border); }
+.role { position: relative; padding: 0 0 2rem; }
+.role::before { content: ""; position: absolute; left: calc(-1.5rem - 7px); top: .5rem; width: 12px; height: 12px; border-radius: 50%; background: var(--bg); border: 2px solid var(--accent); }
+.role:first-child::before { background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 25%, transparent); }
+.role h3 { margin: 0; font-size: 1.15rem; letter-spacing: -.01em; }
+.role .at { color: var(--muted); font-weight: 500; }
+.role-meta { margin: .1rem 0 .6rem; color: var(--accent); font-size: .85rem; font-weight: 600; }
+.role ul { margin: 0; padding-left: 1.1rem; color: var(--muted); font-size: .97rem; line-height: 1.6; }
+.role ul li { margin: .3rem 0; }
+.earlier { margin-top: .5rem; }
+.earlier summary { cursor: pointer; display: inline-block; padding: .5rem 1rem; border: 1px solid var(--border); border-radius: 999px; color: var(--muted); font-weight: 500; font-size: .9rem; margin-bottom: 1.5rem; }
+.earlier summary:hover { color: var(--text); border-color: var(--accent); }
+.earlier[open] summary { margin-bottom: 1.75rem; }

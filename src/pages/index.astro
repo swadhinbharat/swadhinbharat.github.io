@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import photo from '../assets/swadhin.jpg';
 import certifications from '../data/certifications.json';
+import experience from '../data/experience.json';
 
 const badgeImages = import.meta.glob<{ default: ImageMetadata }>('../assets/badges/*.png', { eager: true });
 const today = new Date().toISOString().slice(0, 10);
@@ -11,6 +12,8 @@ const all = certifications
   .filter((c) => c.image);
 const certs = all.filter((c) => !c.expires || c.expires >= today);
 const past = all.filter((c) => c.expires && c.expires < today);
+const recent = experience.slice(0, 3);
+const earlier = experience.slice(3);
 const fmt = (d: string) => new Date(d).toLocaleDateString('en', { month: 'short', year: 'numeric' });
 
 const expertise = [
@@ -44,6 +47,36 @@ const stack = ['SAP S/4HANA', 'SAP BTP', 'SAP CAP', 'Fiori Elements', 'Cloud Fou
     <p class="about">
       I’m a Technical Architect with extensive experience in SAP technology and a deep interest in cloud. I hold multiple SAP certifications on SAP cloud technology, and I was previously certified as a Kubernetes Application Developer (CKAD). My recent work is creating cloud-native applications for SAP Business Technology Platform using the SAP Cloud Application Programming Model and SAP Fiori Elements, on Cloud Foundry and Kyma runtime.
     </p>
+  </section>
+
+  <section id="experience" class="container section">
+    <h2 class="section-title">Experience</h2>
+    <ol class="timeline">
+      {recent.map((r) => (
+        <li class="role">
+            <div class="role-head">
+              <h3>{r.title} <span class="at">· {r.company}</span></h3>
+              <p class="role-meta">{r.period} · {r.location}</p>
+            </div>
+            <ul>{r.highlights.map((h) => <li>{h}</li>)}</ul>
+          </li>
+      ))}
+    </ol>
+    <details class="earlier">
+      <summary>Earlier career · 2005 – 2015</summary>
+      <ol class="timeline">
+        {earlier.map((r) => (
+          <li class="role">
+            <div class="role-head">
+              <h3>{r.title} <span class="at">· {r.company}</span></h3>
+              <p class="role-meta">{r.period} · {r.location}</p>
+            </div>
+            <ul>{r.highlights.map((h) => <li>{h}</li>)}</ul>
+          </li>
+        ))}
+      </ol>
+    </details>
+    <p class="muted more"><a href="https://flowcv.com/resume/4r0nje4jj7" target="_blank" rel="noopener">Full résumé ↗</a></p>
   </section>
 
   <section id="expertise" class="container section">

@@ -1,0 +1,82 @@
+[
+  {
+    "title": "Principal Consultant",
+    "company": "msg global solutions Deutschland GmbH",
+    "location": "Germany",
+    "period": "Apr 2025 – Present",
+    "highlights": [
+      "Architect and build full-stack SAP BTP applications for a leading global chemical company.",
+      "Engineer end-to-end Order-to-Cash integrations across SAP and non-SAP landscapes, using REST/OData and event-driven messaging.",
+      "Drive cloud-native standards, governance and CI strategy across cross-functional delivery teams."
+    ]
+  },
+  {
+    "title": "Principal Consultant",
+    "company": "msg global solutions Asia Pvt. Ltd.",
+    "location": "Singapore",
+    "period": "Apr 2018 – Mar 2025",
+    "highlights": [
+      "Established and led Competency Centers for SAP Fiori, RAP and CAP (Node.js) on BTP, upskilling 20+ engineers per center.",
+      "Architected enterprise cloud-native BTP products published and commercialized on the SAP Store.",
+      "Co-engineered SAP S/4HANA Insurance Suite across four major releases with SAP core teams, and moved legacy insurance deployments to SAP Kyma with Docker, Helm and CI/CD.",
+      "Led the Community of Technology as Zonal Practice Head, mentoring 50+ engineers and incubating internal SaaS products."
+    ]
+  },
+  {
+    "title": "SAP Consultant",
+    "company": "ITCAN Pte Limited",
+    "location": "Singapore",
+    "period": "Feb 2016 – Apr 2018",
+    "highlights": [
+      "Delivered HCM, LMS and SuccessFactors implementations for 10+ public sector organizations.",
+      "Led HCM and Payroll core deployments for a major petrochemical company, including localization and compliance."
+    ]
+  },
+  {
+    "title": "SAP ABAP Webdynpro Consultant",
+    "company": "AMK Technology Sdn Bhd",
+    "location": "Kuala Lumpur, Malaysia",
+    "period": "Jun 2015 – Dec 2015",
+    "highlights": [
+      "Supported public sector modernization across SAP Treasury, CML and HCM modules.",
+      "Built an automated ABAP reporting framework that cut mass report development effort."
+    ]
+  },
+  {
+    "title": "Technical Team Lead",
+    "company": "WNS Global Services",
+    "location": "Pune, India",
+    "period": "Dec 2010 – Jul 2014",
+    "highlights": [
+      "Led technical teams building internal financial products (Accounts Payable Workbench, Purchase Card, Customer WB) for 40+ Fortune 500 clients."
+    ]
+  },
+  {
+    "title": "Sr. Consultant, SAP ABAP",
+    "company": "Optimal Solutions Pvt. Ltd.",
+    "location": "Bengaluru, India",
+    "period": "Feb 2010 – Dec 2010",
+    "highlights": [
+      "Implemented SAP SRM for a global brewer and delivered bespoke SAP CRM implementations across enterprise clients."
+    ]
+  },
+  {
+    "title": "Senior Software Engineer",
+    "company": "SAP Labs India Pvt. Ltd.",
+    "location": "Bengaluru, India",
+    "period": "Jun 2007 – Feb 2010",
+    "highlights": [
+      "Product Owner for Issue Management in SAP Solution Manager, managing requirements and roadmaps across releases.",
+      "Engineered core Task Management modules for Solution Manager."
+    ]
+  },
+  {
+    "title": "Software Engineer",
+    "company": "Atos Origin India Pvt. Ltd.",
+    "location": "Mumbai, India",
+    "period": "Oct 2005 – Jun 2007",
+    "highlights": [
+      "Developed custom ABAP solutions for full-lifecycle SAP implementations across SD, MM, FI and PP."
+    ]
+  }
+]
