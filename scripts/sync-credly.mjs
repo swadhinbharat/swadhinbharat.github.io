@@ -12,9 +12,12 @@ const { data } = await res.json();
 // Only formal certifications; skip records of achievement, hackathons, etc.
 const isCert = (b) => /^SAP Certified/.test(b.badge_template.name) || /^CKAD/.test(b.badge_template.name);
 
+const wanted = data.filter(isCert);
+if (wanted.length === 0) throw new Error('No certifications returned; refusing to overwrite the snapshot');
+
 await mkdir('src/assets/badges', { recursive: true });
 const certs = [];
-for (const b of data.filter(isCert)) {
+for (const b of wanted) {
   const img = await fetch(b.image_url);
   if (!img.ok) throw new Error(`Image ${b.image_url} responded ${img.status}`);
   await writeFile(`src/assets/badges/${b.id}.png`, Buffer.from(await img.arrayBuffer()));
