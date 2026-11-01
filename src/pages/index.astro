@@ -2,14 +2,24 @@
 import { Image } from 'astro:assets';
 import Base from '../layouts/Base.astro';
 import photo from '../assets/swadhin.jpg';
+import certifications from '../data/certifications.json';
+
+const badgeImages = import.meta.glob<{ default: ImageMetadata }>('../assets/badges/*.png', { eager: true });
+const today = new Date().toISOString().slice(0, 10);
+const all = certifications
+  .map((c) => ({ ...c, image: badgeImages[`../assets/badges/${c.id}.png`]?.default }))
+  .filter((c) => c.image);
+const certs = all.filter((c) => !c.expires || c.expires >= today);
+const past = all.filter((c) => c.expires && c.expires < today);
+const fmt = (d: string) => new Date(d).toLocaleDateString('en', { month: 'short', year: 'numeric' });
 
 const expertise = [
   { title: 'SAP S/4HANA', text: 'Guiding customers through their journey to S/4HANA, from architecture to cutover.' },
   { title: 'Cloud migration', text: 'Moving SAP landscapes and workloads to the cloud with pragmatic, low-risk approaches.' },
   { title: 'SAP BTP', text: 'Cloud-native apps with the SAP Cloud Application Programming Model (CAP) and SAP Fiori Elements.' },
-  { title: 'Kubernetes & Kyma', text: 'Deploying on Cloud Foundry and Kyma runtime. Google Certified Kubernetes Application Developer (CKAD).' },
+  { title: 'Kubernetes & Kyma', text: 'Deploying on Cloud Foundry and Kyma runtime, with a Kubernetes background (previously CKAD certified).' },
 ];
-const stack = ['SAP S/4HANA', 'SAP BTP', 'SAP CAP', 'Fiori Elements', 'Cloud Foundry', 'Kyma', 'Kubernetes', 'CKAD'];
+const stack = ['SAP S/4HANA', 'SAP BTP', 'SAP CAP', 'Fiori Elements', 'Cloud Foundry', 'Kyma', 'Kubernetes'];
 ---
 <Base>
   <section class="hero container">
@@ -32,7 +42,7 @@ const stack = ['SAP S/4HANA', 'SAP BTP', 'SAP CAP', 'Fiori Elements', 'Cloud Fou
   <section id="about" class="container section">
     <h2 class="section-title">About</h2>
     <p class="about">
-      I’m a Technical Architect with extensive experience in SAP technology and a deep interest in cloud. I hold multiple SAP certifications on SAP cloud technology and the Google CKAD certification. My recent work is creating cloud-native applications for SAP Business Technology Platform using the SAP Cloud Application Programming Model and SAP Fiori Elements, on Cloud Foundry and Kyma runtime.
+      I’m a Technical Architect with extensive experience in SAP technology and a deep interest in cloud. I hold multiple SAP certifications on SAP cloud technology, and I was previously certified as a Kubernetes Application Developer (CKAD). My recent work is creating cloud-native applications for SAP Business Technology Platform using the SAP Cloud Application Programming Model and SAP Fiori Elements, on Cloud Foundry and Kyma runtime.
     </p>
   </section>
 
@@ -43,6 +53,42 @@ const stack = ['SAP S/4HANA', 'SAP BTP', 'SAP CAP', 'Fiori Elements', 'Cloud Fou
         <article class="card"><h3>{e.title}</h3><p>{e.text}</p></article>
       ))}
     </div>
+  </section>
+
+  <section id="certifications" class="container section">
+    <h2 class="section-title">Certifications</h2>
+    <ul class="certs">
+      {certs.map((c) => (
+        <li>
+          <a class="cert" href={c.url} target="_blank" rel="noopener">
+            <Image src={c.image} alt="" width={72} height={72} loading="lazy" />
+            <div>
+              <h3>{c.name}</h3>
+              <p>{c.issuer} · {fmt(c.issued)}</p>
+            </div>
+          </a>
+        </li>
+      ))}
+    </ul>
+    {past.length > 0 && (
+      <>
+        <h3 class="subhead">Previously certified</h3>
+        <ul class="certs past">
+          {past.map((c) => (
+            <li>
+              <a class="cert" href={c.url} target="_blank" rel="noopener">
+                <Image src={c.image} alt="" width={72} height={72} loading="lazy" />
+                <div>
+                  <h3>{c.name}</h3>
+                  <p>{c.issuer} · {fmt(c.issued)} – {fmt(c.expires!)}</p>
+                </div>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+    <p class="muted more"><a href="https://www.credly.com/users/swadhin" target="_blank" rel="noopener">All badges on Credly ↗</a></p>
   </section>
 
   <section class="container section">
