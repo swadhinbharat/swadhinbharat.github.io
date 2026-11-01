@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 interface Props { title?: string; description?: string }
-const { title, description = 'Technical Architect specialising in SAP S/4HANA, SAP BTP and cloud-native applications.' } = Astro.props;
+const { title, description = 'Technical Architect specialising in SAP S/4HANA, SAP Business AI Platform and cloud-native applications.' } = Astro.props;
 const fullTitle = title ? `${title} · Swadhin Patel` : 'Swadhin Patel · Technical Architect';
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const nav = [
